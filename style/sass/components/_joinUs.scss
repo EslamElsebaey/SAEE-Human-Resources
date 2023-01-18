@@ -1,0 +1,160 @@
+.joinUs{
+    height: 400px;
+}
+html[dir="ltr"]{
+    .joinUs{
+       direction: rtl;
+    }
+    .join-content{
+        direction: ltr;
+        padding: 35px 125px 35px 60px;
+    }
+}
+.joinUs-sec{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $second-color;
+     background-image: url(../images/join.png);
+    background-repeat: no-repeat;
+}
+.join-content{
+    padding: 35px 125px 35px 115px;
+    min-height: 212px;
+    background-color: $main_color;
+    max-width: 50%;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 80px;
+        top: 0;
+       right: 100%;
+        height: 100%;
+        background-color: rgba(22, 105, 123, 0.4);
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        top: 0;
+       right: 100%;
+        height: 100%;
+        background-color: rgba(22, 105, 123, 0.702);
+    }
+}
+.qualified-text{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.getJob-text{
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.join-btn{
+padding: 9px 40.2px;
+display: inline-block;
+border-radius: 21px;
+background-color: $yellow-color;
+font-size: 16px;
+color: #ffffff;
+transition: all linear .2s;
+&:hover{
+    background-color: #fff;
+    color: $main_color;
+}
+}
+
+html[dir="ltr"]{
+    .joinUs-sec {
+        img{
+            transform:  scaleX(-1);
+        }
+    }
+}
+
+
+@include max-1200{
+    .join-content{
+       padding:  30px 50px 30px 30px;
+    }
+  
+    .getJob-text{
+        font-size: 25px;
+    }
+}
+
+@include max-992{
+    html[dir="ltr"]{
+        .join-content{
+            padding: 35px 44px 35px 40px;
+        }
+    }
+    .join-content{
+        padding: 25px 30px;
+        min-height: auto;
+    }
+    .getJob-text{
+        font-size: 22px;
+    }
+    .qualified-text{
+        font-size: 17px;
+    }
+    .join-btn{
+        padding: 9px 35px;
+    }
+}
+
+@include max-768{
+    html[dir="ltr"]{
+        .join-content{
+            padding: 20px ;
+        }
+    }
+    .join-btn:hover{
+        background-color: $yellow-color;
+        color: #fff;
+    }
+    .getJob-text{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .qualified-text{
+        font-size: 16px;
+    }
+    .join-content{
+        max-width: 60%;
+    }
+    .joinUs-sec{
+        padding: 70px 0;
+        min-height: auto;
+    }
+    .joinUs{
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .join-btn {
+        padding: 7px 30px;
+        font-size: 15px;
+    }
+    .getJob-text{
+        font-size: 16px;
+    }
+    .qualified-text{
+        font-size: 15px;
+    }
+    .join-content{
+        padding: 20px;
+    }
+    .join-content{
+        max-width: 70%;
+        padding: 20px 20px 20px 15px;
+    }
+}

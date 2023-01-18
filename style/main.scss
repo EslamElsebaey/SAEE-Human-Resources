@@ -1,0 +1,33 @@
+
+
+// Abstracts
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+
+// Base and fonts
+@import "sass/base/base";
+@import "sass/base/fonts";
+
+
+
+
+
+//components
+
+@import "sass/components/header";
+@import "sass/components/footer";
+@import "sass/components/main";
+@import "sass/components/vision";
+@import "sass/components/services";
+@import "sass/components/clients";
+@import "sass/components/bossSpeech";
+@import "sass/components/joinUs";
+@import "sass/components/service-order";
+
+
+// Reset
+@import "sass/base/reset";
+
+
+
+

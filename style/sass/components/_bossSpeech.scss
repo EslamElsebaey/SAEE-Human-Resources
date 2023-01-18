@@ -1,0 +1,38 @@
+
+.boss-speech{
+    padding: 90px 0;
+}
+.speech-sec{
+    text-align: center;
+    img{
+        margin-bottom: 35px;
+    }
+}
+.speech-para{
+font-size: 18px;
+line-height: 32px;
+color: #000000;
+font-weight: 300;
+text-align: center;
+}
+
+
+@include max-768 {
+    .speech-sec img{
+        width: 150px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    .speech-sec{
+        .main-title{
+            margin-bottom: 20px;
+        }
+    }
+    .boss-speech{
+        padding: 50px 0;
+    }
+    .speech-para{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}

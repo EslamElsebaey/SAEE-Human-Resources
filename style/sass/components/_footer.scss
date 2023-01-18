@@ -1,0 +1,287 @@
+html[dir = "ltr"]{
+    .message {
+        input {
+            padding: 0 50px 0 25px;
+        }
+    }
+}
+
+footer{
+    padding: 90px 0 45px 0;
+    background-color: $main-color;
+    overflow: hidden;
+    position: relative;
+    a:hover{
+        text-decoration: none;
+    }
+    .footer-title{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+}
+html[dir="ltr"]{
+    .footer-shape{
+        position: absolute;
+        top: 78px;
+        right: -72px;
+        z-index: 1;
+        left: unset;
+        transform: scaleX(-1);
+    }
+   
+}
+.quick-links {
+ul li {
+    line-height: 40px;
+   a{
+    text-transform: capitalize;
+    transition: all linear .2s;
+    font-size: 16px;
+    color: #82c0cb;
+    font-weight: 300;
+    &:hover{
+        color: $yellow-color;
+    }
+   }
+}
+}
+.quick-drop{
+    display: flex;
+    height: 125px;
+    max-height: 170px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact ul {
+    font-family: "ITC";
+    display: flex;
+    flex-direction: column;
+    li{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: flex-start;
+        i{
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 3px;
+        }
+        a{
+            margin-inline-start: 15px;
+            transition: all linear .2s;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 400;
+            &:hover{
+                color: $yellow-color;
+            }
+        }
+     
+    }
+}
+.phones {
+    a:first-child{
+        display: block;
+    }
+}
+.newsletter{
+    p{
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 20px;
+        color: #fff;
+        
+    }
+}
+
+.message {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    button {
+        position: absolute;
+        inset-inline-end: 25px;
+        transform: translateY(-50%);
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+       width: 100%;
+        transition: all linear .3s;
+        height: 45px;
+        max-width: 100%;
+        border-radius: 22px;
+        background-color: #f5f5f5;
+        outline: none !important;
+        border: 1px solid transparent;
+        color: #000;
+        padding: 0 25px 0 50px;
+        font-size: 16px;
+        font-weight: 400;
+        &::-webkit-input-placeholder{
+            font-size: 14px;
+            color: #808080;
+            font-weight: 300;
+        }
+    }
+    .mail-icon{
+        color:$main-color;
+        font-size: 14px;
+    }
+}
+
+.tasawk-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin-inline-start: 5px;
+    }
+}
+
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    p{
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+    }
+    .tasawk-logo{
+        margin-inline-start: 8px;
+    }
+}
+.footer-shape{
+    position: absolute;
+    top: 74px;
+    left: -72px;
+    z-index: 1;
+}
+.newsLetter-col{
+margin-inline-start: 8.33333337%;
+}
+
+
+@include max-992{
+    .footer-shape{
+        display: none;
+    }
+    .quick-drop{
+        height: 210px;
+        max-height: none;
+    }
+    .newsLetter-col{
+        margin-inline-start: 0;
+    }
+}
+
+
+@include max-768 {
+      .tasawk-sec{
+        margin-top: 5px;
+      }
+    .quick-drop{
+        height: auto;
+        max-height: none;
+    }
+    .copyright{
+        display: block;
+        p {
+            font-size: 14px;
+        }
+    }
+    .contact , .newsletter  , .quick-links {
+        padding-bottom: 22px;
+        ul li:first-child , .nested{
+            padding-top: 10px;
+        }
+    }
+    .quick-links ul li:first-child{
+        padding-top: 7px;
+    }
+    .quick-links ul li a{
+        font-size: 15px;
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .contact ul li{
+        margin-bottom: 12px;
+    }
+    footer{
+        padding: 50px 0 35px 0;
+    }
+    .quick-drop , .contact ul , .newsletter .nested{
+        display: none;
+    }
+    .copyright{
+        margin-top: 30px;
+    }
+    .message input{
+        &::placeholder{
+            font-size: 13px;
+        }
+    }
+    .quick-links ul li{
+        font-size: 14px;
+        line-height: 34px;
+    }
+    .contact ul li a{
+        font-size: 15px;
+    }
+    .newsletter p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    footer .footer-title{
+        margin-bottom: 0;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-size: 16px;
+        position: relative;
+        &::after {
+            font-size: 15px;
+            content: "\f107";
+            transition: all linear .3s;
+            font-family: "line Awesome free";
+            position: absolute;
+            inset-inline-end: 0;
+            top: 0;
+            font-weight: 900;
+        }
+    }
+    .arrow-rotate::after {
+        transform: translateY(-50%) rotate(180deg)  !important;
+        top: 10px !important;
+    }
+   
+}
+
+
+@include min-768 {
+
+    html[dir="ltr"]{
+        .footer-title{
+            font-size: 18px;
+        }
+        .quick-links ul li a , .contact ul li a , .newsletter p{
+            font-size: 15px;
+        }
+    }
+}
+

@@ -1,0 +1,200 @@
+
+
+html[dir="ltr"]{
+  body{
+    font-family: "ITC";
+  }
+}
+html[dir="rtl"]{
+  body{
+    font-family: 'VEXA';
+  }
+}
+
+*{
+  margin: 0 ;
+  padding: 0;
+}
+
+
+html[dir = "rtl"] {
+  body{
+    text-align: right;
+  }
+}
+html[dir = "ltr"] {
+  body{
+    text-align: left;
+  }
+}
+
+
+.ul-es {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ancor-btn {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  &:hover{
+    text-decoration: none;
+    color: black;
+  }
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.main-title{
+  font-size: 36px;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+img {
+  image-rendering: -webkit-optimize-contrast !important;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main-color;
+  border-radius: 30px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color:  $second-color;
+  
+}
+
+
+// back-up
+.toTop{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  bottom: 10px;
+  background-color: $yellow-color;
+  box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  z-index: 9999;
+  transition: all linear .3s;
+  opacity: 0;
+  visibility: hidden;
+  .toTop-icon{
+      font-size: 19px;
+      color: #fff;
+  }
+}
+
+.showToTop{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+@include max-768 {
+  .main-title{
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+  
+ .clients .swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 3px;
+  }
+  .clients .swiper-pagination-bullet, .news .swiper-pagination-bullet{
+    opacity: .3;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  html[dir="ltr"]{
+    .message input{
+      padding: 0 50px 0 25px;
+    }
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width : 992px) {
+
+.quick-drop{
+  max-height: none;
+}
+
+.contact ul li a{
+  font-size: 16px;
+}
+footer h4{
+  font-size: 16px;
+}
+.message input{
+  padding-left:  25px;
+  padding-right: 25px;
+}
+}
+
+// preloader
+
+.preloader {
+  pointer-events: none;
+  user-select: none;
+}
+.progress {
+  position: fixed;
+  z-index: 99999;
+  top: 0; 
+  width: 100%;
+  height: 5px;
+  background-color: $second-color;
+  overflow: hidden;
+}
+
+.progress-bar {
+  animation: progress 6s ease infinite;
+  background-color: $yellow-color;
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+@include min-1200{
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1170px;
+  }
+}
+

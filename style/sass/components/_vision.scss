@@ -1,0 +1,91 @@
+.vision-sec{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 0;
+}
+.vision-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vision-item:first-of-type{
+    background-image: url(../images/vision.png);
+  
+}
+.vision-item-desc{
+    height: 100%;
+}
+.vision-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 90px;
+}
+
+.vision-item:last-of-type{
+    background-image: url(../images/message.png);
+
+    i{
+        transform: rotateY(180deg);
+    }
+}
+.vision-item-desc{
+    color: #fff;
+    i{
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+}
+.vision-item-desc{
+    text-align: center;
+}
+
+@include max-1200{
+    .vision-item{
+        padding: 60px 50px;
+    }
+}
+
+@include max-992{
+    .vision-item{
+         padding:  50px 40px;
+    }
+}
+
+@include max-768 {
+    html[dir="ltr"]{
+        .vision-item-desc p{
+            line-height: 25px;
+        }
+    }
+    .vision-sec{
+        grid-template-columns: 1fr;
+    }
+    .vision-item-desc i{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .vision-item{
+        padding: 35px 20px;
+    }
+    .vision-item-desc p{
+        font-size: 16px;
+    }
+    .vision-item-desc h3{
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+}
+

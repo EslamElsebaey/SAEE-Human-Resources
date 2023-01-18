@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'VEXA';
+    src: url('VEXA.woff2') format('woff2'),
+        url('VEXA.woff') format('woff'),
+        url('VEXA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VEXA thin R';
+    src: url('VEXAthinR.woff2') format('woff2'),
+        url('VEXAthinR.woff') format('woff'),
+        url('VEXAthinR.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VEXA light R';
+    src: url('VEXAlightR.woff2') format('woff2'),
+        url('VEXAlightR.woff') format('woff'),
+        url('VEXAlightR.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
