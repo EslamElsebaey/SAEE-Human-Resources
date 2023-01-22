@@ -1,29 +1,69 @@
 @font-face {
-    font-family: 'VEXA';
-    src: url('VEXA.woff2') format('woff2'),
-        url('VEXA.woff') format('woff'),
-        url('VEXA.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Changa';
+    src: url('Changa-Bold.woff2') format('woff2'),
+        url('Changa-Bold.woff') format('woff'),
+        url('Changa-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'VEXA thin R';
-    src: url('VEXAthinR.woff2') format('woff2'),
-        url('VEXAthinR.woff') format('woff'),
-        url('VEXAthinR.ttf') format('truetype');
-    font-weight: 100;
+    font-family: 'Changa';
+    src: url('Changa-ExtraLight.woff2') format('woff2'),
+        url('Changa-ExtraLight.woff') format('woff'),
+        url('Changa-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'VEXA light R';
-    src: url('VEXAlightR.woff2') format('woff2'),
-        url('VEXAlightR.woff') format('woff'),
-        url('VEXAlightR.ttf') format('truetype');
+    font-family: 'Changa';
+    src: url('Changa-ExtraBold.woff2') format('woff2'),
+        url('Changa-ExtraBold.woff') format('woff'),
+        url('Changa-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Light.woff2') format('woff2'),
+        url('Changa-Light.woff') format('woff'),
+        url('Changa-Light.ttf') format('truetype');
     font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Medium.woff2') format('woff2'),
+        url('Changa-Medium.woff') format('woff'),
+        url('Changa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-SemiBold.woff2') format('woff2'),
+        url('Changa-SemiBold.woff') format('woff'),
+        url('Changa-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Regular.woff2') format('woff2'),
+        url('Changa-Regular.woff') format('woff'),
+        url('Changa-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
