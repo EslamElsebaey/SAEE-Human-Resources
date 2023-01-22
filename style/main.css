@@ -40,6 +40,7 @@ html[dir=ltr] body {
   color: #16697b;
   text-align: center;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 img {
@@ -73,7 +74,7 @@ img {
   justify-content: center;
   border-radius: 50%;
   border: none;
-  z-index: 9999;
+  z-index: 45;
   transition: all linear 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -311,12 +312,13 @@ img {
 .search-sec .search-icon {
   font-size: 14px;
   color: #16697b;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
+  -webkit-margin-end: 3px;
+          margin-inline-end: 3px;
 }
 .search-sec .search-btn {
   color: #16697b;
   transition: all linear 0.2s;
+  font-weight: 700;
 }
 
 .closeSearh-btn i {
@@ -406,7 +408,7 @@ html[dir=ltr] .search-holder input {
 .service-order-btn {
   font-size: 16px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   padding: 8px 21px;
   border-radius: 20px;
@@ -467,7 +469,7 @@ nav {
 .nav-ul > li a {
   font-size: 16px;
   color: #000000;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: capitalize;
   transition: all linear 0.3s;
   position: relative;
@@ -475,10 +477,6 @@ nav {
 .nav-ul > li a:hover {
   text-decoration: none;
   color: #82c0cb;
-}
-
-html[dir=ltr] .nav-ul > li a {
-  font-size: 15px;
 }
 
 .search-holder-input {
@@ -788,19 +786,10 @@ footer a:hover {
 }
 footer .footer-title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 35px;
   text-transform: capitalize;
   color: #fff;
-}
-
-html[dir=ltr] .footer-shape {
-  position: absolute;
-  top: 78px;
-  right: -72px;
-  z-index: 1;
-  left: unset;
-  transform: scaleX(-1);
 }
 
 .quick-links ul li {
@@ -811,7 +800,7 @@ html[dir=ltr] .footer-shape {
   transition: all linear 0.2s;
   font-size: 16px;
   color: #82c0cb;
-  font-weight: 300;
+  font-weight: 400;
 }
 .quick-links ul li a:hover {
   color: #ffa62b;
@@ -864,6 +853,7 @@ html[dir=ltr] .footer-shape {
   margin: 0;
   margin-bottom: 20px;
   color: #fff;
+  font-weight: 400;
 }
 
 .message {
@@ -924,19 +914,12 @@ html[dir=ltr] .footer-shape {
   margin-bottom: 0;
   font-size: 14px;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 .copyright .tasawk-logo {
   -webkit-margin-start: 8px;
           margin-inline-start: 8px;
-}
-
-.footer-shape {
-  position: absolute;
-  top: 74px;
-  left: -72px;
-  z-index: 1;
 }
 
 .newsLetter-col {
@@ -945,9 +928,6 @@ html[dir=ltr] .footer-shape {
 }
 
 @media only screen and (max-width: 991px) {
-  .footer-shape {
-    display: none;
-  }
   .quick-drop {
     height: 210px;
     max-height: none;
@@ -1042,14 +1022,6 @@ html[dir=ltr] .footer-shape {
     top: 10px !important;
   }
 }
-@media only screen and (min-width: 768px) {
-  html[dir=ltr] .footer-title {
-    font-size: 18px;
-  }
-  html[dir=ltr] .quick-links ul li a, html[dir=ltr] .contact ul li a, html[dir=ltr] .newsletter p {
-    font-size: 15px;
-  }
-}
 .mainBanner {
   background-color: #16697b;
 }
@@ -1105,6 +1077,7 @@ html[dir=ltr] .footer-shape {
   color: #ffffff;
   text-align: center;
   margin-bottom: 25px;
+  font-weight: 600;
 }
 .banner-desc p {
   max-width: 50%;
@@ -1127,6 +1100,7 @@ html[dir=ltr] .footer-shape {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 .banner-desc .readMore:hover {
   background-color: #fff;
@@ -1301,6 +1275,7 @@ html[dir=ltr] .mainslider-item {
 .vision-item-desc h3 {
   font-size: 24px;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .vision-item-desc p {
   font-size: 18px;
@@ -1368,7 +1343,7 @@ html[dir=ltr] .mainslider-item {
 .service-item .ancor-btn {
   font-size: 16px;
   color: #000;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   transition: all linear 0.2s;
 }
@@ -1398,6 +1373,7 @@ html[dir=ltr] .mainslider-item {
   color: #999999;
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
+  font-weight: 600;
 }
 .services .nav-pills .nav-link.active, .services .nav-pills .show > .nav-link {
   background-color: #16697b;
@@ -1421,6 +1397,9 @@ html[dir=ltr] .mainslider-item {
   .service-item .img-holder {
     padding: unset;
   }
+  html[dir=ltr] .services .nav-pills .nav-item {
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .services-items {
@@ -1432,8 +1411,10 @@ html[dir=ltr] .mainslider-item {
   }
   .services .nav-pills .nav-link {
     padding: 10px 22px;
-    margin-bottom: 15px;
     font-size: 15px;
+  }
+  .services .nav-pills .nav-item {
+    margin-bottom: 15px;
   }
   .services .nav {
     margin-bottom: 20px;
@@ -1453,7 +1434,7 @@ html[dir=ltr] .mainslider-item {
 }
 .clients {
   position: relative;
-  padding: 100px 0 110px 0;
+  padding: 95px 0 110px 0;
   background-color: #f5f5f5;
 }
 .clients .swiper-button-prev, .clients .swiper-rtl .swiper-button-next, .clients .swiper-button-next, .clients .swiper-rtl .swiper-button-prev {
@@ -1612,6 +1593,7 @@ html[dir=ltr] .join-content {
   color: #ffffff;
   margin-bottom: 25px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .join-btn {
@@ -1622,6 +1604,7 @@ html[dir=ltr] .join-content {
   font-size: 16px;
   color: #ffffff;
   transition: all linear 0.2s;
+  font-weight: 600;
 }
 .join-btn:hover {
   background-color: #fff;
@@ -1715,6 +1698,7 @@ html[dir=ltr] .joinUs-sec img {
   color: #ffffff;
   text-align: center;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .breadcrumb-content {
@@ -1740,7 +1724,7 @@ html[dir=ltr] .joinUs-sec img {
 .bread-link, .breadcrumb .active {
   font-size: 14px;
   color: #82c0cb;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .bread-link {
@@ -1760,7 +1744,7 @@ html[dir=ltr] .joinUs-sec img {
   font-size: 22px;
   color: #16697b;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -1771,7 +1755,7 @@ html[dir=ltr] .joinUs-sec img {
   display: block;
   font-size: 14px;
   color: #000000;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
 }
@@ -1853,19 +1837,4 @@ html[dir=ltr] .joinUs-sec img {
   .general-input {
     margin-bottom: 22px;
   }
-}
-html[dir=ltr] .nav-ul > li a, html[dir=ltr] .speech-para {
-  font-weight: 400;
-}
-html[dir=ltr] .vision-item-desc h3 {
-  font-weight: 700;
-}
-html[dir=ltr] .vision-item-desc p {
-  font-weight: 400;
-}
-html[dir=ltr] .service-item .ancor-btn {
-  font-weight: 400;
-}
-html[dir=ltr] .qualified-text, html[dir=ltr] .join-btn, html[dir=ltr] .quick-links ul li a, html[dir=ltr] .copyright p {
-  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

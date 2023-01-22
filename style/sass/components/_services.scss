@@ -19,7 +19,7 @@
     .ancor-btn{
         font-size: 16px;
         color: #000;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
         transition: all linear .2s;
     }
@@ -50,6 +50,7 @@
         font-size: 16px;
         color: #999999;
         margin-inline-end: 10px ;
+        font-weight: 600;
     }
     .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
         background-color: $main-color;
@@ -76,10 +77,16 @@
     .service-item .img-holder{
         padding: unset;
     }
+    html[dir="ltr"]{
+        .services .nav-pills .nav-item{
+            margin-bottom: 15px;
+        }
+    }
 }
 
 
 @include max-768 {
+ 
     .services-items{
         grid-template-columns: repeat(2 , 1fr);
         gap: 30px 20px;
@@ -89,9 +96,12 @@
     }
 .services .nav-pills .nav-link {
     padding: 10px 22px;
-    margin-bottom: 15px;
     font-size: 15px;
 }
+.services .nav-pills .nav-item{
+    margin-bottom: 15px;
+}
+
 .services .nav{
     margin-bottom: 20px;
 }

@@ -81,11 +81,12 @@
     .search-icon{
         font-size: 14px;
         color: $main-color;
-        margin-inline-end: 5px;
+        margin-inline-end: 3px;
     }
     .search-btn {
         color: $main-color;
         transition: all linear .2s;
+        font-weight: 700;
     }
 }
 
@@ -187,7 +188,7 @@ html[dir="ltr"]{
 .service-order-btn {
     font-size: 16px;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     padding: 8px 21px;
     border-radius: 20px;
@@ -248,7 +249,7 @@ nav{
         a{
             font-size: 16px;
             color: #000000;
-            font-weight: 100;
+            font-weight: 400;
             text-transform: capitalize;
             transition: all linear .3s;
             position: relative;
@@ -259,15 +260,7 @@ nav{
         }
     }
 }
-html[dir = "ltr"]{
-    .nav-ul {
-        > li {
-            a{
-                font-size: 15px;
-            }
-        } 
-    } 
-}
+
 .search-holder-input{
     position: relative;
     width: 238px;

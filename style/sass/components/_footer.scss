@@ -16,22 +16,11 @@ footer{
     }
     .footer-title{
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 35px;
         text-transform: capitalize;
         color: #fff;
     }
-}
-html[dir="ltr"]{
-    .footer-shape{
-        position: absolute;
-        top: 78px;
-        right: -72px;
-        z-index: 1;
-        left: unset;
-        transform: scaleX(-1);
-    }
-   
 }
 .quick-links {
 ul li {
@@ -41,7 +30,7 @@ ul li {
     transition: all linear .2s;
     font-size: 16px;
     color: #82c0cb;
-    font-weight: 300;
+    font-weight: 400;
     &:hover{
         color: $yellow-color;
     }
@@ -95,6 +84,7 @@ ul li {
         margin: 0;
         margin-bottom: 20px;
         color: #fff;
+        font-weight: 400;
         
     }
 }
@@ -156,28 +146,20 @@ ul li {
         margin-bottom: 0;
         font-size: 14px;
         color: #ffffff;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
     }
     .tasawk-logo{
         margin-inline-start: 8px;
     }
 }
-.footer-shape{
-    position: absolute;
-    top: 74px;
-    left: -72px;
-    z-index: 1;
-}
+
 .newsLetter-col{
 margin-inline-start: 8.33333337%;
 }
 
 
 @include max-992{
-    .footer-shape{
-        display: none;
-    }
     .quick-drop{
         height: 210px;
         max-height: none;
@@ -269,18 +251,5 @@ margin-inline-start: 8.33333337%;
         top: 10px !important;
     }
    
-}
-
-
-@include min-768 {
-
-    html[dir="ltr"]{
-        .footer-title{
-            font-size: 18px;
-        }
-        .quick-links ul li a , .contact ul li a , .newsletter p{
-            font-size: 15px;
-        }
-    }
 }
 
