@@ -10,7 +10,7 @@
     transition: all 0.3s ease-in-out;
 }
 .overflowHidden{
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .show-icons .menu-bars {
