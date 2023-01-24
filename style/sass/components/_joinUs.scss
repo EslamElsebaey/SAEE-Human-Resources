@@ -10,10 +10,10 @@
 .blue-div{
     position: absolute;
     background-color: $main_color;
-    left: 100%;
+    left: 99.9%;
     top: 0;
     height: 100%;
-    width: 195px;
+    width: 100%;
 }
 html[dir="ltr"]{
     .joinUs{
@@ -35,7 +35,7 @@ html[dir="ltr"]{
   
 }
 .join-content{
-    padding: 40px 0 40px 40px;
+    padding: 40px 2px 40px 40px;
     min-height: 212px;
     background-color: $main_color;
     max-width: 50%;
