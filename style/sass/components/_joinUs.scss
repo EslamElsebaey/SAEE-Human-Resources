@@ -1,5 +1,19 @@
 .joinUs{
     height: 400px;
+    background-image: url(../images/join.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   .container{
+    height: 100%;
+}
+}
+.blue-div{
+    position: absolute;
+    background-color: $main_color;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 195px;
 }
 html[dir="ltr"]{
     .joinUs{
@@ -7,20 +21,21 @@ html[dir="ltr"]{
     }
     .join-content{
         direction: ltr;
-        padding: 35px 125px 35px 60px;
     }
+    .joinUs{
+        overflow: hidden;
+    }
+
 }
 .joinUs-sec{
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: $second-color;
-     background-image: url(../images/join.png);
-    background-repeat: no-repeat;
+  
 }
 .join-content{
-    padding: 35px 125px 35px 115px;
+    padding: 40px 0 40px 40px;
     min-height: 212px;
     background-color: $main_color;
     max-width: 50%;
@@ -72,68 +87,53 @@ font-weight: 600;
 }
 }
 
-html[dir="ltr"]{
-    .joinUs-sec {
-        img{
-            transform:  scaleX(-1);
-        }
-    }
-}
 
 
 @include max-1200{
-    .join-content{
-       padding:  30px 50px 30px 30px;
-    }
-  
     .getJob-text{
         font-size: 25px;
     }
 }
 
 @include max-992{
-    html[dir="ltr"]{
-        .join-content{
-            padding: 35px 44px 35px 40px;
-        }
-    }
-    .join-content{
-        padding: 25px 30px;
-        min-height: auto;
-    }
     .getJob-text{
         font-size: 22px;
-    }
-    .qualified-text{
-        font-size: 17px;
     }
     .join-btn{
         padding: 9px 35px;
     }
+    .join-content{
+        padding :40px 0 40px 30px ;
+    }
 }
 
 @include max-768{
-    html[dir="ltr"]{
-        .join-content{
-            padding: 20px ;
-        }
-    }
     .join-btn:hover{
         background-color: $yellow-color;
         color: #fff;
+    }
+    .join-content::after , .join-content::before{
+        display: none;
+    }
+    .join-content{
+        max-width: none;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    .blue-div{
+        display: none;
     }
     .getJob-text{
         font-size: 18px;
         line-height: 1.6;
     }
-    .qualified-text{
-        font-size: 16px;
-    }
-    .join-content{
-        max-width: 60%;
-    }
     .joinUs-sec{
-        padding: 70px 0;
+        padding: 10px 0;
         min-height: auto;
     }
     .joinUs{
@@ -141,22 +141,3 @@ html[dir="ltr"]{
     }
 }
 
-@media screen and (max-width : 500px) {
-    .join-btn {
-        padding: 7px 30px;
-        font-size: 15px;
-    }
-    .getJob-text{
-        font-size: 16px;
-    }
-    .qualified-text{
-        font-size: 15px;
-    }
-    .join-content{
-        padding: 20px;
-    }
-    .join-content{
-        max-width: 70%;
-        padding: 20px 20px 20px 15px;
-    }
-}

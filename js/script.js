@@ -45,7 +45,7 @@ $(document).ready(function(){
 const mainSwiper = new Swiper('.mainBanner .mainSwiper', {
   loop: true,
   draggable: true,
-  // autoplay: true,
+  autoplay: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
     prevEl: '.mainBanner .swiper-button-prev',
@@ -58,7 +58,6 @@ const mainSwiper = new Swiper('.mainBanner .mainSwiper', {
 
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 0
@@ -74,7 +73,7 @@ const mainSwiper = new Swiper('.mainBanner .mainSwiper', {
 // clients swiper
 const clientsSwiper = new Swiper('.clients .swiper', {
   loop: true,
-  // autoplay : true ,
+  autoplay : true ,
   pagination: {
     el: '.clients .swiper-pagination',
     clickable: true,
@@ -120,14 +119,12 @@ const clientsSwiper = new Swiper('.clients .swiper', {
 
 // open and close sideBar
 
-$(".openNav-btn").click(function(){
-  $("nav").removeClass("open-nav");
-  $("body").css("overflow" , "hidden") ;
+$(".menu-bars").click(function(){
+  $(this).toggleClass("open-bars");
+  $("nav").toggleClass("reset-left");
+  $("body").toggleClass("overflowHidden");
 })
-$(".closeNav-btn").click(function(){
-  $("nav").addClass("open-nav");
-  $("body").css("overflow" , "visible") ;
-})
+
 
 /************************************************************************ */
  
@@ -142,26 +139,12 @@ $(window).scroll(function(){
 })
 
 $(".toTop").click(function(){
-  $('html, body').animate({scrollTop:0}, '1000');
+  $('html, body').animate({scrollTop:0}, 500);
 }) 
 
 
 /************************************************************************ */
 
-// open and close sideBar
-
-$(".openNav-btn").click(function(){
-  $("nav").removeClass("open-nav");
-  $("body").css("overflow" , "hidden") ;
-})
-$(".closeNav-btn").click(function(){
-  $("nav").addClass("open-nav");
-  $("body").css("overflow" , "visible") ;
-  $(".ul-drop").slideUp(300);
-  $(".li-drop").removeClass("icon-rotate");
-})
-
-/************************************************************************ */
 
 
 // footer nested menu
@@ -208,14 +191,20 @@ new WOW().init();
 
 //fixed nav
 
-  //~~~~~~~~~ fixed header
     //~~~~~~~~~ fixed header
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 150) {
         $("header").addClass("fixed");
         $(".lang a span").css("color" , "#16697b");
+        if($(window).width() > 768){
+          $(".logo img").css("width" , "120px");
+        }
       } else {
         $("header").removeClass("fixed");
+        if($(window).width() > 768){
+          $(".logo img").css("width" , "170px");
+        }
+      
       }
     });
     var fixedBar = document.querySelector("header"),

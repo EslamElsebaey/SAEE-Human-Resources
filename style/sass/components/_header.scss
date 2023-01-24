@@ -1,3 +1,75 @@
+//  humburger icon
+ 
+ .menu-bars {
+    position: relative;
+    z-index: 300;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    margin-inline-start: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+
+.show-icons .menu-bars {
+    display: none;
+    background: transparent;
+    outline: none !important;
+}
+
+.fixall {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+.hamburger-lines {
+    height: 14px;
+    width: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-lines .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+   background-color: #000;
+   transition: all 0.4s ease-in-out;
+}
+.open-bars .hamburger-lines .line1 {
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+  }
+  .open-bars .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .open-bars .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // top header 
 
 .top-header{
@@ -183,6 +255,14 @@ html[dir="ltr"]{
     .search-holder input{
         padding: 0 50px 0 25px;
     }
+}
+
+.reset-left {
+    left: 0;
+    top: 0;
+    clip-path: circle(139.6% at 9% 15%);
+    visibility: visible;
+    opacity: 1;
 }
 
 .service-order-btn {
@@ -467,20 +547,24 @@ nav{
         top: 0 ;
         inset-inline-start: 0%;
         width: 100%;
-        z-index: 99;
         height: 100%;
         padding: 19px 22px 0 22px;
         background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        clip-path: circle(10.9% at 16% 16%);
+        transition: 0.4s;
+        z-index: 200;
+        // overflow-y: auto;
     }
     .nav-ul{
         flex-direction: column;
         margin: 30px 0 0 0 !important;
-        align-items: flex-start;
+        align-items: center;
     }
     .nav-ul > li{
         margin-bottom: 15px;
         margin-inline-end: 0;
-        width: 100%;
         a{
               display: flex;
             justify-content: space-between;

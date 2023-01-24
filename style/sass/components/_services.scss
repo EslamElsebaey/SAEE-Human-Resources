@@ -40,11 +40,13 @@
 
 .services{
     .nav{
-        justify-content: center;
         margin-bottom: 30px;
+        justify-content: center;
+     
     }
     .nav-pills .nav-link{
-        padding: 10.5px 27px;
+        width: 221px;
+        height: 45px;
         border-radius: 22px;
         background-color: #ebebeb;
         font-size: 16px;
@@ -91,12 +93,11 @@
         grid-template-columns: repeat(2 , 1fr);
         gap: 30px 20px;
     }
-    .service-item .img-holder{
-        padding: unset;
-    }
 .services .nav-pills .nav-link {
-    padding: 10px 22px;
     font-size: 15px;
+    width: 207px;
+    height: 40px;
+    padding: 0 !important;
 }
 .services .nav-pills .nav-item{
     margin-bottom: 15px;
@@ -104,20 +105,27 @@
 
 .services .nav{
     margin-bottom: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: unset;
 }
+.services .nav::-webkit-scrollbar {
+    display: none;
+  }
 .service-item .ancor-btn{
     font-size: 15px;
 }
 .services{
     padding: 50px 0 70px 0;
 }
-}
-
-
-
-@media screen and (max-width :450px) {
-    .services .nav-pills .nav-link {
-        padding: 10px 12px;
-        font-size: 14px;
+.service-item .img-holder{
+    max-height: 155px;
+    img{
+        width: 75px;
     }
+    // width: 155px;
 }
+}
+
+
+

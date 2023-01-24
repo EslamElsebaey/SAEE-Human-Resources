@@ -91,12 +91,12 @@
   <div class="logo">
     <a href="en.html"> <img src="images/logo.png" alt="image"></a>
   </div>
-  <nav class="open-nav">
-    <div class="close-lang-holder">
+  <nav class="">
+    <!-- <div class="close-lang-holder">
       <button class=" ancor-btn closeNav-btn">
         <i class="las la-times"></i>
       </button>
-    </div>
+    </div> -->
     <ul class="ul-es nav-ul">
       <li><a class="ancor-btn" href="en.html">home</a></li>
       <li><a class="ancor-btn" href="#">about </a></li>
@@ -114,9 +114,16 @@
     <button class=" ancor-btn  openSearch-btn openMySearch">
       <i class="las la-search"></i>
     </button>
-    <button class=" ancor-btn  openNav-btn">
-      <i class="las la-bars"></i>
+    <button class="menu-bars ancor-btn fixall" id="menu-id">
+      <span class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </span>
     </button>
+    <!-- <button class=" ancor-btn  openNav-btn">
+      <i class="las la-bars"></i>
+    </button> -->
   </div>
   <div class="search-holder-parent">
     <div class="search-holder">
@@ -156,7 +163,7 @@
       <div class="swiper-slide">
         <div class="mainslider-item ">
           <figure>
-            <img class="mainBannerImg"   src="images/main.png" />
+            <img   src="images/main.png" />
            </figure>
           <div class="banner-desc">
           <h1>SAEE Human Resources Company </h1>
@@ -168,7 +175,7 @@
       <div class="swiper-slide">
         <div class="mainslider-item ">
           <figure>
-            <img class="mainBannerImg"   src="images/main.png" />
+            <img    src="images/main.png" />
            </figure>
           <div class="banner-desc">
             <h1>SAEE Human Resources Company </h1>
@@ -239,7 +246,7 @@
     <button class="nav-link " id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Management consulting</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Integrated administrative services</button>
+    <button class="nav-link active" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Integrated admin services</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Human resources services</button>
@@ -248,7 +255,6 @@
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade  " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
     <div class="speech-sec">
-      <img src="images/saudi vision.png" alt="">
       <h2 class="speech-text main-title">CEO speech</h2>
       <p class="speech-para"> The promising vision of the Kingdom of Saudi Arabia for the year 2030 for development in all sectors of the country is a tangible reality on the ground, and from this standpoint, Saei supports continuous development in all sectors that the country relies on in building renaissance and achieving sustainable development, so we strive with all effort and sincerity to achieve the highest standards of quality Efficiency and continuous development of all our customers in all different services, which guarantee tangible success.</p>
     </div>
@@ -461,13 +467,16 @@
 
 <!-- join us -->
 <div class="joinUs wow  fadeInDown">
-<div class="joinUs-sec">
-<div class="join-content">
-  <p class="qualified-text">See yourself qualified and experienced</p>
-  <h2 class="getJob-text">Find your suitable job in Saee</h2>
-  <a href="#" class="ancor-btn join-btn">Join us </a>
-</div>
-</div>
+  <div class="container">
+    <div class="joinUs-sec">
+      <div class="join-content">
+        <div class="blue-div"></div>
+          <p class="qualified-text">See yourself qualified and experienced</p>
+          <h2 class="getJob-text">FIND YOUR SUITABLE JOB IN SAEE</h2>
+          <a href="#" class="ancor-btn join-btn">Join us  </a>
+    </div>
+  </div>
+  </div>
 </div>
 <!-- end of join us -->
 

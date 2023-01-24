@@ -1,6 +1,5 @@
 
 .mainBanner{
-    background-color: $main-color;
     .mainBanner-parent{
     position: relative;
     height: 100%;
@@ -8,14 +7,18 @@
    }
    figure {
     margin: 0;
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
    }
    .mainslider-item{
     text-align: center;
     position: relative;
-    background-image: url(../images/shape.png);
-    background-repeat: no-repeat;
-    background-position: 141% 40%;
-    overflow: hidden;
+    height: 100%;
    }
    .swiper{
     height: 100%;
@@ -25,17 +28,6 @@
     content: "";
 }
 
-
-.mainslider-item {
-    height: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        height: 100%;
-        object-fit: cover;
-    }
-} 
 
 
 
@@ -85,10 +77,6 @@
 
 }
   
-.mainBannerImg{
-    margin-top: -135px;
-    opacity: 1;
-}
 
 
 
@@ -198,7 +186,7 @@ html[dir="ltr"]{
         margin-inline-start: 0;
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 10px;
+        bottom: 3px;
     }
     .swiper-button-prev, .swiper-rtl .swiper-button-next, .swiper-button-next, .swiper-rtl .swiper-button-prev{
         display: none;
