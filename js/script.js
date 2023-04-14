@@ -1,4 +1,18 @@
+
+$(window).on("load", function () {
+  $(".preloader").fadeOut();
+})
+
+
+$(document).ready(function(){
+   
+
+
+
+
 /************************************************************************ */
+
+
 
 // show and hide search box
 
@@ -15,26 +29,6 @@ $(".closeSearh-btn").click(function(){
   $("body").css("overflow" , "visible") ;
  
 })
-
-/************************************************************************ */
-
-
-$(document).ready(function(){
-    // preloader
-    setTimeout(function () {
-      $(".preloader").css({
-        opacity : "0" , 
-        visibility : "hidden" , 
-      })
-    }, 2000);
-
-
-
-
-/************************************************************************ */
-
-
-
 
 
 
@@ -156,7 +150,6 @@ if($(window).width() <= 768) {
     $(this).toggleClass("arrow-rotate");
     $(".footer-title").not($(this)).next().slideUp(300);
     $(".footer-title").not($(this)).removeClass("arrow-rotate");
-
   })
 }
 
