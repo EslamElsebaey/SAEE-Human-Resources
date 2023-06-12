@@ -113,11 +113,16 @@ const clientsSwiper = new Swiper('.clients .swiper', {
 
 // open and close sideBar
 
-$(".menu-bars").click(function(){
-  $(this).toggleClass("open-bars");
-  $("nav").toggleClass("reset-left");
-  $("body").toggleClass("overflowHidden");
+$(".openNav-btn").click(function(){
+  $("nav").addClass("reset-left");
+  $("body").addClass("overflowHidden");
 })
+
+$(".closeNav-btn").click(function(){
+  $("nav").removeClass("reset-left");
+  $("body").removeClass("overflowHidden");
+})
+
 
 
 /************************************************************************ */
